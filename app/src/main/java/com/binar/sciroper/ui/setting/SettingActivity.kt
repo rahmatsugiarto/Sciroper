@@ -5,6 +5,8 @@ import android.os.Bundle
 import com.binar.sciroper.R
 
 class SettingActivity : AppCompatActivity(), SettingView {
+    private val presenter: SettingPresenter = SettingPresenterImpl(this)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_setting)
@@ -12,6 +14,7 @@ class SettingActivity : AppCompatActivity(), SettingView {
 
     override fun setTheme(isDarkMode: Boolean) {
         if (isDarkMode){
+
         } else {
 
         }
