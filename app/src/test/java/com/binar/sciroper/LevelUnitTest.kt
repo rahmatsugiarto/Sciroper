@@ -1,5 +1,6 @@
 package com.binar.sciroper
 
+import android.util.Log
 import com.binar.sciroper.data.db.user.User
 import com.binar.sciroper.util.AvatarHelper
 import com.binar.sciroper.util.UserLevel
@@ -13,7 +14,8 @@ import org.junit.Before
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-class ExampleUnitTest {
+class LevelUnitTest {
+    private val TAG = "LEVEL_UNIT_TEST"
     private lateinit var user: User
     private lateinit var userLevel: UserLevel
     private lateinit var users: List<User>
@@ -43,11 +45,6 @@ class ExampleUnitTest {
     }
 
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
-    }
-
-    @Test
     fun avatarHelper_isCorrect() {
         assert( AvatarHelper.avatarId3 == R.drawable.avatar3 )
     }
@@ -67,6 +64,10 @@ class ExampleUnitTest {
     @Test
     fun userLevelSortUsers_isCorrect(){
         UserLevel.sortUsersLevel(users)
+
+        users.forEach {
+            println(it.id)
+        }
 
         assert( users[3].id == 2 )
     }
