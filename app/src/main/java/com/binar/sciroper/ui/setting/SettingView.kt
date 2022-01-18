@@ -1,5 +1,5 @@
 package com.binar.sciroper.ui.setting
 
 interface SettingView {
-    fun setTheme(isDarkMode: Boolean)
+    fun setTheme(isDarkMode: Boolean?)
 }
