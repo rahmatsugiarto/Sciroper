@@ -8,7 +8,8 @@ class SettingPresenterImpl(private val view: SettingView): SettingPresenter {
         view.setTheme(isDarkMode)
     }
 
-    override fun checkDarkMode() {
+    override fun checkDarkMode(): Boolean? {
         view.setTheme(AppSharedPreference.isDarkMode)
+        return AppSharedPreference.isDarkMode
     }
 }
