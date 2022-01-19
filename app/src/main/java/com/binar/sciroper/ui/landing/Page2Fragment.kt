@@ -10,7 +10,6 @@ import android.widget.ImageView
 import com.binar.sciroper.R
 import com.binar.sciroper.databinding.FragmentPage2Binding
 import com.binar.sciroper.ui.playgame.PlayActivity
-import com.bumptech.glide.Glide
 
 
 class Page2Fragment : Fragment() {
@@ -27,7 +26,7 @@ class Page2Fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val ivFirstPage = view.findViewById<ImageView>(R.id.iv_second_page)
+        val ivSecondPage = view.findViewById<ImageView>(R.id.iv_second_page)
 
         binding.btnNext.setOnClickListener {
             val intent = Intent(activity, PlayActivity::class.java)
