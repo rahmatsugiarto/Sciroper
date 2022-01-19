@@ -17,8 +17,7 @@ class LandingPageActivity : AppCompatActivity() {
 
         val fragments: ArrayList<Fragment> = arrayListOf(
             Page1Fragment(),
-            Page2Fragment(),
-            Page3Fragment()
+            Page2Fragment()
         )
 
         val adapter = ViewPagerAdapter(fragments, this)
