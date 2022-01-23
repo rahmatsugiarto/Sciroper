@@ -7,9 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import com.binar.sciroper.R
+import com.binar.sciroper.databinding.FragmentPage1Binding
+import com.binar.sciroper.databinding.FragmentPage2Binding
 import com.bumptech.glide.Glide
 
 class Page1Fragment : Fragment() {
+    private var _binding: FragmentPage1Binding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -20,7 +24,7 @@ class Page1Fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val ivFirstPage = view.findViewById<ImageView>(R.id.iv_first_page)
+        val ivFirstPage = _binding?.ivFirstPage
 
     }
 }

@@ -26,7 +26,7 @@ class Page2Fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val ivSecondPage = view.findViewById<ImageView>(R.id.iv_second_page)
+        val ivSecondPage = _binding?.ivSecondPage
 
         binding.btnNext.setOnClickListener {
             val intent = Intent(activity, PlayActivity::class.java)
