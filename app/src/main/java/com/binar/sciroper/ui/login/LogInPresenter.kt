@@ -2,10 +2,12 @@ package com.binar.sciroper.ui.login
 
 import com.binar.sciroper.data.local.AppSharedPreference
 import com.binar.sciroper.util.App
+import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
+@DelicateCoroutinesApi
 class LogInPresenter(private val view: LogInContract.View) : LogInContract.Presenter {
 
     override fun onLogin(email: String, password: String) {
