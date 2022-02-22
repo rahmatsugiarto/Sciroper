@@ -1,7 +1,18 @@
 # Sciroper-MVP
-Rock Paper Scissors game Android with MVP(Model-View-Presenter)
+Rock Paper Scissors game Android using MVP(Model-View-Presenter)
 
 This project was developed by several people, if you want to see who it is, [click here](https://github.com/riskiilyas/Sciroper-CC6/graphs/contributors)
+
+## Feature:
+- Splash Screen
+- Landing Page
+- SignIn/SignUP
+- Menu
+- Gameplay-pvp/pvc
+- How To Play
+- LeaderBoard
+- DarkMode
+- Profile
 
 ## Components:
 - View Pager2
